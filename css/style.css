@@ -1,0 +1,137 @@
+/*  =========================
+    FRONTEND MENTOR CHALLENGE
+    =========================   */
+
+/**
+ *  3-column preview card component
+ *      Coded by no7sag
+ */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+/*
+font-family: 'Lexend Deca', sans-serif;
+*/
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    letter-spacing: 1px;
+    line-height: 1.7;
+    height: 80vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 20vh 15% 5vh;
+}
+
+.block-1 {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    min-width: 240px;
+}
+
+.block-2 {
+    background-color: hsl(184, 100%, 22%);
+    min-width: 240px;
+}
+
+.block-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    min-width: 240px;
+}
+
+.block-item {
+    margin-left: 48px;
+    margin-right: 24px;
+}
+
+img {
+    margin-top: 48px;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 38px;
+    margin-top: 25px;
+}
+
+p {
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+input {
+    padding: 16px 30px;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    outline: none;
+    background-color: hsl(0, 0%, 95%);
+    transition: background-color .3s, color .3s;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.block-1 > input {
+    color: hsl(31, 77%, 52%);
+}
+
+.block-2 > input {
+    color: hsl(184, 100%, 22%);
+}
+
+.block-3 > input {
+    color: hsl(179, 100%, 13%);
+}
+
+input:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+
+@media screen and (max-width: 1200px) AND (min-width: 929px) {
+    .container {
+        margin: 20vh 10% 5vh;
+    }
+
+}
+
+@media screen and (max-width: 928px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 12vh 3vh 5vh;
+    }
+
+    .block-item {
+        margin-right: 22px;
+    }
+
+    h2 {
+        margin-top: 22px;
+    }
+
+    p {
+        margin-top: 15px;
+    }
+
+    .block-1 {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 8px;
+    }
+
+    .block-3 {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+    }
+}
